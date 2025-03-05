@@ -1,14 +1,15 @@
 if (.Platform$OS.type == "unix") {
-  z_dir <- "~/Z/"
+  z_dir <- "~/Z/Intern Work Area"
 } else {
-  z_dir <- "Z:/Projects/"
+  z_dir <- "Z:/Interns Work Area"
 }
 
 
-proj_dir <- paste0(z_dir, "Projects-XX/PXX-XXXX/Work")
+dir <- list(
+  #raw = file.path(z_dir, "Manasi Ramnath/UK House Prices/1. raw"),
+  #cache = file.path(z_dir, "Manasi Ramnath/UK House Prices/2. cache"),
+  #output = file.path(z_dir, "Manasi Ramnath/UK House Prices/3. output"),
+  scripts = file.path("scripts")
+)
 
-dir_raw <- paste0(proj_dir, "/raw_data")
-dir_processed <- paste0(proj_dir, "/processed_data")
-dir_output <- paste0(proj_dir, "/outputs")
-
-rm(z_dir, proj_dir)
+rm(z_dir)

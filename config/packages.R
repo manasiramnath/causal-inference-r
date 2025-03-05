@@ -11,7 +11,7 @@ pacman::p_load(
   readODS, installr, tidyverse, zip, janitor, readxl, writexl, openxlsx,
   car, tidymodels, plm, readr, broom.mixed, lmtest, multiwayvcov, tidypredict, 
   ggplot2, Metrics, caret, gridExtra, foreach, plotly,
-  sp, sf, tmap, RColorBrewer, stargazer, devtools
+  sp, sf, tmap, RColorBrewer, stargazer, devtools, haven
 )
 # install fe package
 if (!requireNamespace("fe", quietly = TRUE)) {
